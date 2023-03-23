@@ -35,10 +35,11 @@ const LapTimer = () => {
       <h1>Lap Timer</h1>
       <div>TIme : {time} </div>
       {!running && <button onClick={startTimer}>Start</button>}
-      {running && <button onClick={stopTimer}>Start</button>}
+      {running && <button onClick={stopTimer}>Stop</button>}
 
+      <button onClick={addLap}>Lap</button>
       <button onClick={resetTimer}>Reset</button>
-      <button onClick={addLap}>Add Lap</button>
+      
         {laps.length > 0 && (
           <div>
             <h2>Laps</h2>
